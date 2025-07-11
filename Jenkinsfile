@@ -19,7 +19,7 @@ pipeline {
         stage('Run Container for Testing') {
             steps {
                 script {
-                    dockerImage.run('-d -p 8080:80')
+                    dockerImage.run('-d -p 8081:80')
                 }
             }
         }
